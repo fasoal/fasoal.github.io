@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "69a9214b"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="iOS,GitHub,Objective-C,Swift," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Cha.tingting" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="在自己工作之余，收集整理了一些优秀的三方开源框架，自己整理的这些三方开源库涵盖了iOS开发面很多方面的知识。非常感谢这些开源库的作者们，正是因为这些库，提高了我们的开发效率，同样也是我们学习进步的源泉。现将这个整理工程文件分享出来，希望能给需要的朋友一些帮助，同时也自己也做下收集记录。">
+<meta name="keywords" content="iOS,GitHub,Objective-C,Swift">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS优秀三方开源库整理，了解一下">
+<meta property="og:url" content="http://blogwenbo.com/2018/07/08/iOS优秀三方开源库整理/index.html">
+<meta property="og:site_name" content="Cha.tingting">
+<meta property="og:description" content="在自己工作之余，收集整理了一些优秀的三方开源框架，自己整理的这些三方开源库涵盖了iOS开发面很多方面的知识。非常感谢这些开源库的作者们，正是因为这些库，提高了我们的开发效率，同样也是我们学习进步的源泉。现将这个整理工程文件分享出来，希望能给需要的朋友一些帮助，同时也自己也做下收集记录。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-27T02:59:03.290Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="iOS优秀三方开源库整理，了解一下">
+<meta name="twitter:description" content="在自己工作之余，收集整理了一些优秀的三方开源框架，自己整理的这些三方开源库涵盖了iOS开发面很多方面的知识。非常感谢这些开源库的作者们，正是因为这些库，提高了我们的开发效率，同样也是我们学习进步的源泉。现将这个整理工程文件分享出来，希望能给需要的朋友一些帮助，同时也自己也做下收集记录。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://blogwenbo.com/2018/07/08/iOS优秀三方开源库整理/"/>
+
+
+
+
+
+  <title>iOS优秀三方开源库整理，了解一下 | Cha.tingting</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+<a href="https://github.com/wenmobo" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Cha.tingting</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">我是菜狗子, 我为自己代言</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-top">
+          <a href="/top/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-signal"></i> <br />
+            
+            阅读排行
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blogwenbo.com/2018/07/08/iOS优秀三方开源库整理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Cha.tingting">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/img\tingting.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cha.tingting">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">iOS优秀三方开源库整理，了解一下</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-08T11:00:36+08:00">
+                2018-07-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/iOS/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/07/08/iOS优秀三方开源库整理/" class="leancloud_visitors" data-flag-title="iOS优秀三方开源库整理，了解一下">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span><span>℃</span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,433
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  6
+                </span>
+              
+            </div>
+          
+
+          
+              <div class="post-description">
+                  在自己工作之余，收集整理了一些优秀的三方开源框架，自己整理的这些三方开源库涵盖了iOS开发面很多方面的知识。非常感谢这些开源库的作者们，正是因为这些库，提高了我们的开发效率，同样也是我们学习进步的源泉。现将这个整理工程文件分享出来，希望能给需要的朋友一些帮助，同时也自己也做下收集记录。
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p class="description"></p>
+
+<a id="more"></a>
+<h1 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h1><blockquote>
+<p>在自己工作之余，收集整理了一些优秀的三方开源框架，自己整理的这些三方开源库涵盖了iOS开发面很多方面的知识。非常感谢这些开源库的作者们，正是因为这些库，提高了我们的开发效率，同样也是我们学习进步的源泉。现将这个整理工程文件分享出来，希望能给需要的朋友一些帮助，同时也自己也做下收集记录。</p>
+</blockquote>
+<h3 id="Github整理地址"><a href="#Github整理地址" class="headerlink" title="Github整理地址"></a>Github整理地址</h3><ul>
+<li><a href="https://github.com/wenmobo/WBCollectOCThirdLib" target="_blank" rel="noopener">Objective-C三方库整理</a>  </li>
+<li><a href="https://github.com/wenmobo/WBCollectSwfitThirdLib" target="_blank" rel="noopener">Swift三方库整理</a></li>
+</ul>
+<h1 id="二、Objective-C三方开源库"><a href="#二、Objective-C三方开源库" class="headerlink" title="二、Objective-C三方开源库"></a>二、Objective-C三方开源库</h1><h3 id="表格侧滑菜单"><a href="#表格侧滑菜单" class="headerlink" title="表格侧滑菜单"></a>表格侧滑菜单</h3><ul>
+<li><a href="https://github.com/MortimerGoro/MGSwipeTableCell" target="_blank" rel="noopener">MGSwipeTableCell</a>  </li>
+<li><a href="https://github.com/CEWendel/SWTableViewCell" target="_blank" rel="noopener">SWTableViewCell</a>  </li>
+<li><a href="https://github.com/jasnig/ZJSwipeTableView" target="_blank" rel="noopener">ZJSwipeTableView</a></li>
+</ul>
+<h3 id="表格高度缓存库"><a href="#表格高度缓存库" class="headerlink" title="表格高度缓存库"></a>表格高度缓存库</h3><ul>
+<li><p><a href="https://github.com/forkingdog/UITableView-FDTemplateLayoutCell" target="_blank" rel="noopener">FDTemplateLayoutCell</a><br><strong>Template auto layout cell for automatically UITableViewCell height calculating.</strong></p>
+</li>
+<li><p><a href="https://github.com/CoderJackyHuang/HYBMasonryAutoCellHeight" target="_blank" rel="noopener">HYBMasonryAutoCellHeight</a></p>
+</li>
+</ul>
+<h3 id="表格刷新控件"><a href="#表格刷新控件" class="headerlink" title="表格刷新控件"></a>表格刷新控件</h3><ul>
+<li><p><a href="https://github.com/CoderMJLee/MJRefresh" target="_blank" rel="noopener">MJRefresh</a></p>
+</li>
+<li><p><a href="https://github.com/OpenFeyn/KafkaRefresh" target="_blank" rel="noopener">KafkaRefresh</a></p>
+</li>
+</ul>
+<h3 id="弹出菜单（类似微信弹出菜单）"><a href="#弹出菜单（类似微信弹出菜单）" class="headerlink" title="弹出菜单（类似微信弹出菜单）"></a>弹出菜单（类似微信弹出菜单）</h3><ul>
+<li><a href="https://github.com/liufengting/FTPopOverMenu" target="_blank" rel="noopener">FTPopOverMenu</a>   </li>
+<li><a href="https://github.com/kolyvan/kxmenu" target="_blank" rel="noopener">kxmenu</a></li>
+<li><a href="https://github.com/KongPro/PopMenuTableView" target="_blank" rel="noopener">PopMenuTableView</a></li>
+</ul>
+<h3 id="导航栏相关"><a href="#导航栏相关" class="headerlink" title="导航栏相关"></a>导航栏相关</h3><ul>
+<li><p><a href="https://github.com/forkingdog/FDFullscreenPopGesture" target="_blank" rel="noopener">FDFullscreenPopGesture</a><br><strong>全屏返回手势</strong></p>
+</li>
+<li><p><a href="https://github.com/MoZhouqi/KMNavigationBarTransition" target="_blank" rel="noopener">KMNavigationBarTransition</a></p>
+</li>
+<li><p><a href="https://github.com/rickytan/RTRootNavigationController" target="_blank" rel="noopener">RTRootNavigationController</a>  </p>
+</li>
+<li><a href="https://github.com/wangrui460/WRNavigationBar" target="_blank" rel="noopener">WRNavigationBar</a></li>
+</ul>
+<h3 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h3><ul>
+<li><a href="https://github.com/airbnb/lottie-ios" target="_blank" rel="noopener">lottie-ios</a>  </li>
+<li><a href="https://github.com/facebook/pop" target="_blank" rel="noopener">pop</a>     </li>
+<li><a href="https://github.com/Lision/LSAnimator" target="_blank" rel="noopener">LSAnimator</a></li>
+</ul>
+<h3 id="分段（分类）控件"><a href="#分段（分类）控件" class="headerlink" title="分段（分类）控件"></a>分段（分类）控件</h3><ul>
+<li><p><a href="https://github.com/HeshamMegid/HMSegmentedControl" target="_blank" rel="noopener">HMSegmentedControl</a><br><strong>比较经典的分段控件。</strong></p>
+</li>
+<li><p><a href="https://github.com/pujiaxin33/JXCategoryView" target="_blank" rel="noopener">JXCategoryView</a><br><strong>A powerful and easy to use category view (segmentedcontrol, segmentview, pagingview, pagerview, pagecontrol) (腾讯新闻、今日头条、QQ音乐、网易云音乐、京东、爱奇艺、腾讯视频、淘宝、天猫、简书、微博等所有主流APP分类切换滚动视图)。</strong></p>
+</li>
+</ul>
+<h3 id="富文本编辑"><a href="#富文本编辑" class="headerlink" title="富文本编辑"></a>富文本编辑</h3><ul>
+<li><a href="https://github.com/nnhubbard/ZSSRichTextEditor" target="_blank" rel="noopener">ZSSRichTextEditor</a><br><strong>基于UIWebView实现富文本编辑功能，可能由于作者很少维护，使用有很多的bug</strong></li>
+</ul>
+<h3 id="弹幕"><a href="#弹幕" class="headerlink" title="弹幕"></a>弹幕</h3><ul>
+<li><a href="https://github.com/panghaijiao/HJDanmakuDemo" target="_blank" rel="noopener">HJDanmakuDemo</a>   </li>
+</ul>
+<h3 id="滚动视图"><a href="#滚动视图" class="headerlink" title="滚动视图"></a>滚动视图</h3><ul>
+<li><a href="https://github.com/nicklockwood/SwipeView" target="_blank" rel="noopener">SwipeView</a></li>
+</ul>
+<h3 id="滚动视图嵌套"><a href="#滚动视图嵌套" class="headerlink" title="滚动视图嵌套"></a>滚动视图嵌套</h3><ul>
+<li><p><a href="https://github.com/panghaijiao/HJTabViewController" target="_blank" rel="noopener">HJTabViewController</a> </p>
+</li>
+<li><p><a href="https://github.com/gltwy/LTScrollView" target="_blank" rel="noopener">LTScrollView</a></p>
+</li>
+</ul>
+<h3 id="红点提示"><a href="#红点提示" class="headerlink" title="红点提示"></a>红点提示</h3><ul>
+<li><p><a href="https://github.com/JaviSoto/JSBadgeView" target="_blank" rel="noopener">JSBadgeView</a></p>
+</li>
+<li><p><a href="https://github.com/weng1250/WZLBadge" target="_blank" rel="noopener">WZLBadge</a></p>
+</li>
+</ul>
+<h3 id="键盘"><a href="#键盘" class="headerlink" title="键盘"></a>键盘</h3><ul>
+<li><p><a href="https://github.com/hackiftekhar/IQKeyboardManager" target="_blank" rel="noopener">IQKeyboardManager</a><br><strong>Codeless drop-in universal library allows to prevent issues of keyboard sliding up and cover UITextField/UITextView. Neither need to write any code nor any setup required and much more.一款强大键盘管理库。</strong></p>
+</li>
+<li><p><a href="https://github.com/matmartinez/MMNumberKeyboard" target="_blank" rel="noopener">MMNumberKeyboard</a><br><strong>数字键盘。</strong></p>
+</li>
+<li><p><a href="https://github.com/michaeltyson/TPKeyboardAvoiding" target="_blank" rel="noopener">TPKeyboardAvoiding</a>   </p>
+</li>
+</ul>
+<h3 id="界面布局"><a href="#界面布局" class="headerlink" title="界面布局"></a>界面布局</h3><ul>
+<li><p><a href="https://github.com/zhenglibao/FlexLib" target="_blank" rel="noopener">FlexLib</a><br><strong>FlexLib is a framework for creating native iOS applications using xml file, similar to Android and .NET development way.类似于安卓xml布局。</strong></p>
+</li>
+<li><p><a href="https://github.com/SnapKit/Masonry" target="_blank" rel="noopener">Masonry</a><br><strong>Harness the power of AutoLayout NSLayoutConstraints with a simplified, chainable and expressive syntax. Supports iOS and OSX Auto Layout.对苹果原生AutoLayout的封装，链式语法，纯代码开发必备布局库。</strong></p>
+</li>
+<li><p><a href="https://github.com/gsdios/SDAutoLayout" target="_blank" rel="noopener">SDAutoLayout</a><br><strong>One line of code to implement automatic layout. 一行代码搞定自动布局！支持Cell和Tableview高度自适应，Label和ScrollView内容自适应，致力于做最简单易用的AutoLayout库。The most easy way for autoLayout. Based on runtime.</strong></p>
+</li>
+<li><p><a href="https://github.com/netyouli/WHC_AutoLayoutKit" target="_blank" rel="noopener">WHC_AutoLayoutKit</a> </p>
+</li>
+<li><p><a href="https://github.com/youngsoft/MyLinearLayout" target="_blank" rel="noopener">MyLinearLayout</a><br><strong>MyLayout是一套iOS界面视图布局框架。MyLayout的内核是基于对UIView的layoutSubviews方法的重载以及对子视图的bounds和center属性的设置而实现的。MyLayout功能强大而且简单易用，它集成了:iOS Autolayout和SizeClass、android的5大布局体系、HTML/CSS的浮动定位技术以及flex-box和bootstrap框架等市面上主流的平台的界面布局功能，同时提供了一套非常简单和完备的多屏幕尺寸适配的解决方案。之前自己布局一直用Frame、Masonry，Xib布局，最近也在学习这款强大的布局框架。</strong></p>
+</li>
+</ul>
+<h3 id="进度指示器"><a href="#进度指示器" class="headerlink" title="进度指示器"></a>进度指示器</h3><ul>
+<li><p><a href="https://github.com/danielamitay/DACircularProgress" target="_blank" rel="noopener">DACircularProgress</a></p>
+</li>
+<li><p><a href="https://github.com/gsdios/SDProgressView" target="_blank" rel="noopener">SDProgressView</a></p>
+</li>
+</ul>
+<h3 id="开发模式"><a href="#开发模式" class="headerlink" title="开发模式"></a>开发模式</h3><ul>
+<li><a href="https://github.com/facebook/KVOController" target="_blank" rel="noopener">KVOController</a>    </li>
+</ul>
+<h3 id="控制器切换"><a href="#控制器切换" class="headerlink" title="控制器切换"></a>控制器切换</h3><ul>
+<li><p><a href="https://github.com/DevelopmentEngineer-DWQ/DWQListOfDifferentOrderStatus" target="_blank" rel="noopener">DWQListOfDifferentOrderStatus</a></p>
+</li>
+<li><p><a href="https://github.com/runlhy/HYPageView" target="_blank" rel="noopener">HYPageView</a> </p>
+</li>
+<li><p><a href="https://github.com/kingsic/SGPagingView" target="_blank" rel="noopener">SGPagingView</a></p>
+</li>
+<li><p><a href="https://github.com/wangmchn/WMPageController" target="_blank" rel="noopener">WMPageController</a></p>
+</li>
+<li><p><a href="https://github.com/jasnig/ZJScrollPageView" target="_blank" rel="noopener">ZJScrollPageView</a></p>
+</li>
+</ul>
+<h3 id="数据存储"><a href="#数据存储" class="headerlink" title="数据存储"></a>数据存储</h3><ul>
+<li><p><a href="https://github.com/ccgus/fmdb" target="_blank" rel="noopener">fmdb</a>  </p>
+</li>
+<li><p><a href="https://github.com/huangzhibiao/BGFMDB" target="_blank" rel="noopener">BGFMDB</a>  </p>
+</li>
+<li><p><a href="https://github.com/Haley-Wong/JKDBModel" target="_blank" rel="noopener">JKDBModel</a></p>
+</li>
+<li><p><a href="https://github.com/scubers/JRDB" target="_blank" rel="noopener">JRDB</a>  </p>
+</li>
+<li><p><a href="https://github.com/li6185377/LKDBHelper-SQLite-ORM" target="_blank" rel="noopener">LKDBHelper-SQLite-ORM</a></p>
+</li>
+</ul>
+<h3 id="数据转模型"><a href="#数据转模型" class="headerlink" title="数据转模型"></a>数据转模型</h3><ul>
+<li><a href="https://github.com/CoderMJLee/MJExtension" target="_blank" rel="noopener">MJExtension</a>  </li>
+<li><p><a href="https://github.com/ibireme/YYModel" target="_blank" rel="noopener">YYModel</a> </p>
+</li>
+<li><p><a href="https://github.com/Mantle/Mantle" target="_blank" rel="noopener">Mantle</a>    </p>
+</li>
+<li><p><a href="https://github.com/jsonmodel/jsonmodel" target="_blank" rel="noopener">jsonmodel</a> </p>
+</li>
+<li><p><a href="https://github.com/graetzer/GDataXML-HTML" target="_blank" rel="noopener">GDataXML-HTML</a></p>
+</li>
+</ul>
+<h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><ul>
+<li><a href="https://github.com/ko1o/PYSearch" target="_blank" rel="noopener">PYSearch</a></li>
+</ul>
+<h3 id="提示框架"><a href="#提示框架" class="headerlink" title="提示框架"></a>提示框架</h3><ul>
+<li><p><a href="https://github.com/jdg/MBProgressHUD/tree/master" target="_blank" rel="noopener">MBProgressHUD</a> </p>
+</li>
+<li><p><a href="https://github.com/SVProgressHUD/SVProgressHUD" target="_blank" rel="noopener">SVProgressHUD</a>  </p>
+</li>
+<li><p><a href="https://github.com/JonasGessner/JGProgressHUD" target="_blank" rel="noopener">JGProgressHUD</a></p>
+</li>
+<li><p><a href="https://github.com/c0ming/KSToastView" target="_blank" rel="noopener">KSToastView</a></p>
+</li>
+<li><p><a href="https://github.com/adad184/MMPopupView" target="_blank" rel="noopener">MMPopupView</a>   </p>
+</li>
+<li><p><a href="https://github.com/dogo/SCLAlertView" target="_blank" rel="noopener">SCLAlertView</a>  </p>
+</li>
+<li><p><a href="https://github.com/scalessec/Toast" target="_blank" rel="noopener">Toast</a></p>
+</li>
+</ul>
+<h3 id="图表绘制"><a href="#图表绘制" class="headerlink" title="图表绘制"></a>图表绘制</h3><ul>
+<li><p><a href="https://github.com/AAChartModel/AAChartKit" target="_blank" rel="noopener">AAChartKit</a></p>
+</li>
+<li><p><a href="https://github.com/China131/JHChart" target="_blank" rel="noopener">JHChart</a>   </p>
+</li>
+<li><p><a href="https://github.com/Zirkfied/ZFChart" target="_blank" rel="noopener">ZFChart</a>  </p>
+</li>
+<li><p><a href="https://github.com/FireMou/DVPieChart" target="_blank" rel="noopener">DVPieChart</a>  </p>
+</li>
+<li><p><a href="https://github.com/FireMou/DVLineChart" target="_blank" rel="noopener">DVLineChart</a></p>
+</li>
+</ul>
+<h3 id="图片缓存框架"><a href="#图片缓存框架" class="headerlink" title="图片缓存框架"></a>图片缓存框架</h3><ul>
+<li><p><a href="https://github.com/rs/SDWebImage" target="_blank" rel="noopener">SDWebImage</a></p>
+</li>
+<li><p><a href="https://github.com/Flipboard/FLAnimatedImage" target="_blank" rel="noopener">FLAnimatedImage</a>    </p>
+</li>
+<li><p><a href="https://github.com/seanooi/iOS-WebP" target="_blank" rel="noopener">iOS-WebP</a>  </p>
+</li>
+<li><p><a href="https://github.com/ibireme/YYWebImage" target="_blank" rel="noopener">YYWebImage</a> </p>
+</li>
+</ul>
+<h3 id="图片浏览"><a href="#图片浏览" class="headerlink" title="图片浏览"></a>图片浏览</h3><ul>
+<li><p><a href="https://github.com/mwaterfall/MWPhotoBrowser" target="_blank" rel="noopener">MWPhotoBrowser</a> </p>
+</li>
+<li><p><a href="https://github.com/ko1o/PYPhotoBrowser" target="_blank" rel="noopener">PYPhotoBrowser</a>    </p>
+</li>
+<li><p><a href="https://github.com/gsdios/SDPhotoBrowser" target="_blank" rel="noopener">SDPhotoBrowser</a> </p>
+</li>
+<li><p><a href="https://github.com/STShenZhaoliang/STPhotoBrowser" target="_blank" rel="noopener">STPhotoBrowser</a></p>
+</li>
+<li><p><a href="https://github.com/skx926/KSPhotoBrowser" target="_blank" rel="noopener">KSPhotoBrowser</a></p>
+</li>
+</ul>
+<h3 id="图片轮播"><a href="#图片轮播" class="headerlink" title="图片轮播"></a>图片轮播</h3><ul>
+<li><p><a href="https://github.com/gsdios/SDCycleScrollView" target="_blank" rel="noopener">SDCycleScrollView</a>  </p>
+</li>
+<li><p><a href="https://github.com/CoderJackyHuang/HYBLoopScrollView" target="_blank" rel="noopener">HYBLoopScrollView</a>   </p>
+</li>
+<li><p><a href="https://github.com/tingxins/TXScrollLabelView" target="_blank" rel="noopener">TXScrollLabelView</a></p>
+</li>
+</ul>
+<h3 id="图片拾取"><a href="#图片拾取" class="headerlink" title="图片拾取"></a>图片拾取</h3><ul>
+<li><p><a href="https://github.com/banchichen/TZImagePickerController" target="_blank" rel="noopener">TZImagePickerController</a><br><strong>一个支持多选、选原图和视频的图片选择器，同时有预览、裁剪功能，支持iOS6+。</strong></p>
+</li>
+<li><p><a href="https://github.com/chiunam/CTAssetsPickerController" target="_blank" rel="noopener">CTAssetsPickerController</a>    </p>
+</li>
+<li><p><a href="https://github.com/AwesomeDennis/DNImagePicker" target="_blank" rel="noopener">DNImagePicker</a></p>
+</li>
+<li><p><a href="https://github.com/KeenTeam1990/HXWeiboPhotoPicker" target="_blank" rel="noopener">HXWeiboPhotoPicker</a></p>
+</li>
+</ul>
+<h3 id="3D效果图"><a href="#3D效果图" class="headerlink" title="3D效果图"></a>3D效果图</h3><ul>
+<li><a href="https://github.com/heroims/HelloPanoramaGL" target="_blank" rel="noopener">HelloPanoramaGL</a></li>
+</ul>
+<h3 id="网络请求"><a href="#网络请求" class="headerlink" title="网络请求"></a>网络请求</h3><ul>
+<li><p><a href="https://github.com/AFNetworking/AFNetworking" target="_blank" rel="noopener">AFNetworking</a><br><strong>A delightful networking framework for iOS, macOS, watchOS, and tvOS.</strong></p>
+</li>
+<li><p><a href="https://github.com/yuantiku/YTKNetwork" target="_blank" rel="noopener">YTKNetwork</a>   </p>
+</li>
+<li><p><a href="https://github.com/jkpang/PPNetworkHelper" target="_blank" rel="noopener">PPNetworkHelper</a>    </p>
+</li>
+<li><p><a href="https://github.com/CoderJackyHuang/HYBNetworking" target="_blank" rel="noopener">HYBNetworking</a>   </p>
+</li>
+<li><p><a href="https://github.com/knightsj/SJNetwork" target="_blank" rel="noopener">SJNetwork</a></p>
+</li>
+</ul>
+<h3 id="网络状态监测"><a href="#网络状态监测" class="headerlink" title="网络状态监测"></a>网络状态监测</h3><ul>
+<li><a href="https://github.com/tonymillion/Reachability" target="_blank" rel="noopener">Reachability</a></li>
+</ul>
+<h3 id="文件下载"><a href="#文件下载" class="headerlink" title="文件下载"></a>文件下载</h3><ul>
+<li><p><a href="https://github.com/chasseurmic/TWRDownloadManager" target="_blank" rel="noopener">TWRDownloadManager</a></p>
+</li>
+<li><p><a href="https://github.com/renzifeng/ZFDownload" target="_blank" rel="noopener">ZFDownload</a></p>
+</li>
+</ul>
+<h3 id="旋转木马"><a href="#旋转木马" class="headerlink" title="旋转木马"></a>旋转木马</h3><ul>
+<li><p><a href="https://github.com/nicklockwood/iCarousel" target="_blank" rel="noopener">iCarousel</a>  </p>
+</li>
+<li><p><a href="https://github.com/PageGuo/NewPagedFlowView" target="_blank" rel="noopener">NewPagedFlowView</a></p>
+</li>
+</ul>
+<h3 id="音视频"><a href="#音视频" class="headerlink" title="音视频"></a>音视频</h3><ul>
+<li><p><a href="https://github.com/Bilibili/ijkplayer" target="_blank" rel="noopener">ijkplayer</a> </p>
+</li>
+<li><p><a href="https://github.com/renzifeng/ZFPlayer" target="_blank" rel="noopener">ZFPlayer</a></p>
+</li>
+<li><p><a href="https://github.com/zhengwenming/WMPlayer" target="_blank" rel="noopener">WMPlayer</a> </p>
+</li>
+<li><p><a href="https://github.com/suifengqjn/TBPlayer" target="_blank" rel="noopener">TBPlayer</a></p>
+</li>
+<li><p><a href="https://github.com/tangdiforx/TTAVPlayer" target="_blank" rel="noopener">TTAVPlayer</a></p>
+</li>
+</ul>
+<h3 id="占位图"><a href="#占位图" class="headerlink" title="占位图"></a>占位图</h3><ul>
+<li><p><a href="https://github.com/dzenbot/DZNEmptyDataSet" target="_blank" rel="noopener">DZNEmptyDataSet</a><br><strong>A drop-in UITableView/UICollectionView superclass category for showing empty datasets whenever the view has no content to display.集合视图表格视图无数据占位图设置框架，使用只需设置代理、实现代理方法，就能完成占位图设置，非常值得推荐</strong></p>
+</li>
+<li><p><a href="https://github.com/dev-liyang/LYEmptyView" target="_blank" rel="noopener">LYEmptyView</a></p>
+</li>
+</ul>
+<h3 id="C语言扩展库"><a href="#C语言扩展库" class="headerlink" title="C语言扩展库"></a>C语言扩展库</h3><ul>
+<li><a href="https://github.com/jspahrsummers/libextobjc" target="_blank" rel="noopener">libextobjc</a>  </li>
+</ul>
+<h3 id="Socket编程"><a href="#Socket编程" class="headerlink" title="Socket编程"></a>Socket编程</h3><ul>
+<li><p><a href="https://github.com/robbiehanson/CocoaAsyncSocket" target="_blank" rel="noopener">CocoaAsyncSocket</a>  </p>
+</li>
+<li><p><a href="https://github.com/facebook/SocketRocket" target="_blank" rel="noopener">SocketRocket</a>   </p>
+</li>
+<li><p><a href="https://github.com/socketio/socket.io" target="_blank" rel="noopener">socket.io</a> </p>
+</li>
+<li><p><a href="https://github.com/mobile-web-messaging/MQTTKit" target="_blank" rel="noopener">MQTTKit</a></p>
+</li>
+</ul>
+<h3 id="内存泄露检测工具"><a href="#内存泄露检测工具" class="headerlink" title="内存泄露检测工具"></a>内存泄露检测工具</h3><ul>
+<li><p><a href="https://github.com/Tencent/MLeaksFinder" target="_blank" rel="noopener">MLeaksFinder</a><br><strong>腾讯开源内存泄漏检测框架，非常好用，值得推荐。</strong></p>
+</li>
+<li><p><a href="https://github.com/facebook/FBRetainCycleDetector" target="_blank" rel="noopener">FBRetainCycleDetector</a><br><strong>iOS library to help detecting retain cycles in runtime.</strong></p>
+</li>
+</ul>
+<h3 id="YYKit"><a href="#YYKit" class="headerlink" title="YYKit"></a>YYKit</h3><ul>
+<li><a href="https://github.com/ibireme/YYKit" target="_blank" rel="noopener">YYKit</a></li>
+</ul>
+<h3 id="LOG工具"><a href="#LOG工具" class="headerlink" title="LOG工具"></a>LOG工具</h3><ul>
+<li><a href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="noopener">CocoaLumberjack</a><br><strong>A fast &amp; simple, yet powerful &amp; flexible logging framework for Mac and iOS.</strong></li>
+</ul>
+<h3 id="OC与JS交互"><a href="#OC与JS交互" class="headerlink" title="OC与JS交互"></a>OC与JS交互</h3><ul>
+<li><a href="https://github.com/marcuswestin/WebViewJavascriptBridge" target="_blank" rel="noopener">WebViewJavascriptBridge</a></li>
+</ul>
+<h3 id="输入框占位符"><a href="#输入框占位符" class="headerlink" title="输入框占位符"></a>输入框占位符</h3><ul>
+<li><p><a href="https://github.com/devxoul/UITextView-Placeholder" target="_blank" rel="noopener">UITextView-Placeholder</a> </p>
+</li>
+<li><p><a href="https://github.com/iwasrobbed/RPFloatingPlaceholders" target="_blank" rel="noopener">RPFloatingPlaceholders</a></p>
+</li>
+<li><p><a href="https://github.com/glaszig/SZTextView" target="_blank" rel="noopener">SZTextView</a>  </p>
+</li>
+</ul>
+<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><ul>
+<li><a href="https://github.com/shaojiankui/JKCategories" target="_blank" rel="noopener">JKCategories</a></li>
+</ul>
+<h3 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h3><ul>
+<li><a href="https://github.com/BradLarson/GPUImage" target="_blank" rel="noopener">GPUImage</a></li>
+</ul>
+<h3 id="iOS开发知识集合"><a href="#iOS开发知识集合" class="headerlink" title="iOS开发知识集合"></a>iOS开发知识集合</h3><ul>
+<li><a href="https://github.com/awesome-tips/iOS-Tips" target="_blank" rel="noopener">iOS-Tips</a><br><strong>iOS知识小集，<code>iOS知识小集</code>的初衷是希望用300字左右（外加代码和效果展示）来说明一个小知识点，这样读者可以在上下班路上，花个2分钟就能了解一个iOS开发的小知识。</strong></li>
+</ul>
+<h3 id="面试题集锦"><a href="#面试题集锦" class="headerlink" title="面试题集锦"></a>面试题集锦</h3><ul>
+<li><p><a href="https://github.com/ChenYilong/iOSInterviewQuestions" target="_blank" rel="noopener">iOSInterviewQuestions</a><br><strong>iOS面试题集锦（附答案），分为两篇<a href="https://github.com/ChenYilong/iOSInterviewQuestions/blob/master/01%E3%80%8A%E6%8B%9B%E8%81%98%E4%B8%80%E4%B8%AA%E9%9D%A0%E8%B0%B1%E7%9A%84iOS%E3%80%8B%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88/%E3%80%8A%E6%8B%9B%E8%81%98%E4%B8%80%E4%B8%AA%E9%9D%A0%E8%B0%B1%E7%9A%84iOS%E3%80%8B%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%88%E4%B8%8A%EF%BC%89.md" target="_blank" rel="noopener">《招聘一个靠谱的 iOS》—参考答案（上）</a>   、<a href="https://github.com/ChenYilong/iOSInterviewQuestions/blob/master/01%E3%80%8A%E6%8B%9B%E8%81%98%E4%B8%80%E4%B8%AA%E9%9D%A0%E8%B0%B1%E7%9A%84iOS%E3%80%8B%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88/%E3%80%8A%E6%8B%9B%E8%81%98%E4%B8%80%E4%B8%AA%E9%9D%A0%E8%B0%B1%E7%9A%84iOS%E3%80%8B%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88%EF%BC%88%E4%B8%8B%EF%BC%89.md" target="_blank" rel="noopener">《招聘一个靠谱的 iOS》—参考答案（下）</a>，面试前值得学习与了解。</strong></p>
+</li>
+<li><p><a href="https://github.com/liberalisman/iOS-InterviewQuestion-collection" target="_blank" rel="noopener">iOS-InterviewQuestion-collection</a><br><strong>iOS 开发者在面试过程中，常见的一些面试题，建议尽量弄懂了原理，并且多实践。</strong></p>
+</li>
+</ul>
+<h3 id="三方开源库分析"><a href="#三方开源库分析" class="headerlink" title="三方开源库分析"></a>三方开源库分析</h3><ul>
+<li><a href="https://github.com/Draveness/analyze" target="_blank" rel="noopener">analyze</a><br><strong>主要记录了Draveness大神阅读开源框架源代码的心得，主要框架包括<code>SDWebImage</code>、<code>MBProgressHUD</code>、<code>Masonry</code>、<code>AFNetworking</code>、<code>KVOController</code>等，有兴趣的朋友可以到GitHub阅读。</strong></li>
+</ul>
+<h1 id="三、Swift三方开源库"><a href="#三、Swift三方开源库" class="headerlink" title="三、Swift三方开源库"></a>三、Swift三方开源库</h1><h3 id="动画-1"><a href="#动画-1" class="headerlink" title="动画"></a>动画</h3><ul>
+<li><a href="https://github.com/ninjaprox/NVActivityIndicatorView" target="_blank" rel="noopener">NVActivityIndicatorView</a><br><strong>一组极棒的加载动画集合。</strong></li>
+</ul>
+<h3 id="网络请求-1"><a href="#网络请求-1" class="headerlink" title="网络请求"></a>网络请求</h3><ul>
+<li><a href="https://github.com/Alamofire/Alamofire" target="_blank" rel="noopener">Alamofire</a> <strong>Swift优雅的HTTP网络请求库。</strong> </li>
+</ul>
+<h3 id="占位图-1"><a href="#占位图-1" class="headerlink" title="占位图"></a>占位图</h3><ul>
+<li><a href="https://github.com/Juanpe/SkeletonView" target="_blank" rel="noopener">SkeletonView</a></li>
+</ul>
+<h3 id="二维码扫描"><a href="#二维码扫描" class="headerlink" title="二维码扫描"></a>二维码扫描</h3><ul>
+<li><a href="https://github.com/EyreFree/EFQRCode" target="_blank" rel="noopener">EFQRCode</a></li>
+</ul>
+<h3 id="布局框架"><a href="#布局框架" class="headerlink" title="布局框架"></a>布局框架</h3><ul>
+<li><a href="https://github.com/SnapKit/SnapKit" target="_blank" rel="noopener">SnapKit</a>  </li>
+</ul>
+<h3 id="图表绘制-1"><a href="#图表绘制-1" class="headerlink" title="图表绘制"></a>图表绘制</h3><ul>
+<li><a href="https://github.com/danielgindi/Charts" target="_blank" rel="noopener">Charts</a><h3 id="四、结语"><a href="#四、结语" class="headerlink" title="四、结语"></a>四、结语</h3><blockquote>
+<p>上面这些三方开源库按照自己的理解分类整理了一遍，其中OC语言库居多，自己现在也是基于OC开发，Swift收集的相对较少，这些库也是自己现在所了解到的，当然还有很多优秀的三方库自己也未发现和接触，我以后会不断在这篇博客中更新优秀的三方开源库。</p>
+</blockquote>
+</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+<div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+  
+</div>
+
+<div>
+      
+        
+      
+</div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/iOS/" rel="tag"><i class="fa fa-tag"></i> iOS</a>
+          
+            <a href="/tags/GitHub/" rel="tag"><i class="fa fa-tag"></i> GitHub</a>
+          
+            <a href="/tags/Objective-C/" rel="tag"><i class="fa fa-tag"></i> Objective-C</a>
+          
+            <a href="/tags/Swift/" rel="tag"><i class="fa fa-tag"></i> Swift</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+<div style="color: rgba(0, 0, 0, 0.75); font-size:13px; letter-spacing:3px">(&gt;看完记得五星好评哦亲&lt;)</div>
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/07/07/GitPages-Hexo搭建个人博客/" rel="next" title="GitPages+Hexo搭建个人博客">
+                <i class="fa fa-chevron-left"></i> GitPages+Hexo搭建个人博客
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/08/Chisel-LLDB调试助手/" rel="prev" title="Chisel-LLDB调试助手">
+                Chisel-LLDB调试助手 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+      <!--MOB SHARE BEGIN-->
+<div class="-hoofoo-share-title">分享到：</div>
+<div class="-hoofoo-share-buttons">
+    <div class="-mob-share-weibo -hoofoo-share-weibo -hoofoo-share-ui-button"><i class="fa fa-weibo" aria-hidden="true"></i></div>
+    <div class="-mob-share-weixin -hoofoo-share-weixin -hoofoo-share-ui-button"><i class="fa fa-weixin" aria-hidden="true"></i></div>
+    <div class="-mob-share-qq -hoofoo-share-qq -hoofoo-share-ui-button"><i class="fa fa-qq" aria-hidden="true"></i></div>
+    <div class="-mob-share-twitter -hoofoo-share-twitter -hoofoo-share-ui-button"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+    <div class="-hoofoo-share-more -hoofoo-share-ui-button -mob-share-open"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+</div>
+<div class="-mob-share-ui" style="display: none">
+    <ul class="-mob-share-list">
+        <li class="-mob-share-weibo"><p>新浪微博</p></li>
+        <li class="-mob-share-weixin"><p>微信</p></li>
+        <li class="-mob-share-qzone"><p>QQ空间</p></li>
+        <li class="-mob-share-qq"><p>QQ好友</p></li>
+        <li class="-mob-share-tencentweibo"><p>腾讯微博</p></li>
+        <li class="-mob-share-renren"><p>人人网</p></li>
+        <li class="-mob-share-kaixin"><p>开心网</p></li>
+        <li class="-mob-share-douban"><p>豆瓣</p></li>
+        <li class="-mob-share-youdao"><p>有道云笔记</p></li>
+        <li class="-mob-share-mingdao"><p>明道</p></li>
+        <li class="-mob-share-pengyou"><p>朋友网</p></li>
+        <li class="-mob-share-facebook"><p>Facebook</p></li>
+        <li class="-mob-share-twitter"><p>Twitter</p></li>
+        <li class="-mob-share-pocket"><p>Pocket</p></li>
+        <li class="-mob-share-google"><p>Google+</p></li>
+        <li class="-mob-share-tumblr"><p>Tumblr</p></li>
+        <li class="-mob-share-instapaper"><p>Instapaper</p></li>
+        <li class="-mob-share-linkedin"><p>Linkedin</p></li>
+    </ul>
+    <div class="-mob-share-close">取消</div>
+</div>
+<div class="-mob-share-ui-bg"></div>
+<script id="-mob-share" src="https://f1.webshare.mob.com/code/mob-share.js?appkey=26bd318095f14"></script>
+<!--MOB SHARE END-->
+
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMzQyMy85OTc5"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/img\tingting.jpg"
+                alt="Cha.tingting" />
+            
+              <p class="site-author-name" itemprop="name">Cha.tingting</p>
+              <p class="site-description motion-element" itemprop="description">我是菜狗子, 我为自己代言</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/wenmobo" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-GitHub"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="wenmobo2018@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.jianshu.com/u/63445e24e8bf" target="_blank" title="简书">
+                      
+                        <i class="fa fa-fw fa-heartbeat"></i>简书</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://juejin.im/user/5a371ae551882512d0607108" target="_blank" title="掘金">
+                      
+                        <i class="fa fa-fw fa-spinner"></i>掘金</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                推荐阅读
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://developer.apple.com/swift/" title="Swift 4" target="_blank">Swift 4</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://developer.apple.com/documentation/objectivec" title="Objective-C" target="_blank">Objective-C</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          <div id="days"></div>
+</script>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("10/01/2017 00:00:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、前言"><span class="nav-number">1.</span> <span class="nav-text">一、前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Github整理地址"><span class="nav-number">1.0.1.</span> <span class="nav-text">Github整理地址</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、Objective-C三方开源库"><span class="nav-number">2.</span> <span class="nav-text">二、Objective-C三方开源库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#表格侧滑菜单"><span class="nav-number">2.0.1.</span> <span class="nav-text">表格侧滑菜单</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表格高度缓存库"><span class="nav-number">2.0.2.</span> <span class="nav-text">表格高度缓存库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表格刷新控件"><span class="nav-number">2.0.3.</span> <span class="nav-text">表格刷新控件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#弹出菜单（类似微信弹出菜单）"><span class="nav-number">2.0.4.</span> <span class="nav-text">弹出菜单（类似微信弹出菜单）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#导航栏相关"><span class="nav-number">2.0.5.</span> <span class="nav-text">导航栏相关</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#动画"><span class="nav-number">2.0.6.</span> <span class="nav-text">动画</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分段（分类）控件"><span class="nav-number">2.0.7.</span> <span class="nav-text">分段（分类）控件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#富文本编辑"><span class="nav-number">2.0.8.</span> <span class="nav-text">富文本编辑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#弹幕"><span class="nav-number">2.0.9.</span> <span class="nav-text">弹幕</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#滚动视图"><span class="nav-number">2.0.10.</span> <span class="nav-text">滚动视图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#滚动视图嵌套"><span class="nav-number">2.0.11.</span> <span class="nav-text">滚动视图嵌套</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#红点提示"><span class="nav-number">2.0.12.</span> <span class="nav-text">红点提示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#键盘"><span class="nav-number">2.0.13.</span> <span class="nav-text">键盘</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#界面布局"><span class="nav-number">2.0.14.</span> <span class="nav-text">界面布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进度指示器"><span class="nav-number">2.0.15.</span> <span class="nav-text">进度指示器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开发模式"><span class="nav-number">2.0.16.</span> <span class="nav-text">开发模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#控制器切换"><span class="nav-number">2.0.17.</span> <span class="nav-text">控制器切换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据存储"><span class="nav-number">2.0.18.</span> <span class="nav-text">数据存储</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据转模型"><span class="nav-number">2.0.19.</span> <span class="nav-text">数据转模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索"><span class="nav-number">2.0.20.</span> <span class="nav-text">搜索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提示框架"><span class="nav-number">2.0.21.</span> <span class="nav-text">提示框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图表绘制"><span class="nav-number">2.0.22.</span> <span class="nav-text">图表绘制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片缓存框架"><span class="nav-number">2.0.23.</span> <span class="nav-text">图片缓存框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片浏览"><span class="nav-number">2.0.24.</span> <span class="nav-text">图片浏览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片轮播"><span class="nav-number">2.0.25.</span> <span class="nav-text">图片轮播</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片拾取"><span class="nav-number">2.0.26.</span> <span class="nav-text">图片拾取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3D效果图"><span class="nav-number">2.0.27.</span> <span class="nav-text">3D效果图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络请求"><span class="nav-number">2.0.28.</span> <span class="nav-text">网络请求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络状态监测"><span class="nav-number">2.0.29.</span> <span class="nav-text">网络状态监测</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件下载"><span class="nav-number">2.0.30.</span> <span class="nav-text">文件下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#旋转木马"><span class="nav-number">2.0.31.</span> <span class="nav-text">旋转木马</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#音视频"><span class="nav-number">2.0.32.</span> <span class="nav-text">音视频</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#占位图"><span class="nav-number">2.0.33.</span> <span class="nav-text">占位图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#C语言扩展库"><span class="nav-number">2.0.34.</span> <span class="nav-text">C语言扩展库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Socket编程"><span class="nav-number">2.0.35.</span> <span class="nav-text">Socket编程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内存泄露检测工具"><span class="nav-number">2.0.36.</span> <span class="nav-text">内存泄露检测工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#YYKit"><span class="nav-number">2.0.37.</span> <span class="nav-text">YYKit</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LOG工具"><span class="nav-number">2.0.38.</span> <span class="nav-text">LOG工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OC与JS交互"><span class="nav-number">2.0.39.</span> <span class="nav-text">OC与JS交互</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入框占位符"><span class="nav-number">2.0.40.</span> <span class="nav-text">输入框占位符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分类"><span class="nav-number">2.0.41.</span> <span class="nav-text">分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图像处理"><span class="nav-number">2.0.42.</span> <span class="nav-text">图像处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS开发知识集合"><span class="nav-number">2.0.43.</span> <span class="nav-text">iOS开发知识集合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#面试题集锦"><span class="nav-number">2.0.44.</span> <span class="nav-text">面试题集锦</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三方开源库分析"><span class="nav-number">2.0.45.</span> <span class="nav-text">三方开源库分析</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、Swift三方开源库"><span class="nav-number">3.</span> <span class="nav-text">三、Swift三方开源库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#动画-1"><span class="nav-number">3.0.1.</span> <span class="nav-text">动画</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络请求-1"><span class="nav-number">3.0.2.</span> <span class="nav-text">网络请求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#占位图-1"><span class="nav-number">3.0.3.</span> <span class="nav-text">占位图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二维码扫描"><span class="nav-number">3.0.4.</span> <span class="nav-text">二维码扫描</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#布局框架"><span class="nav-number">3.0.5.</span> <span class="nav-text">布局框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图表绘制-1"><span class="nav-number">3.0.6.</span> <span class="nav-text">图表绘制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四、结语"><span class="nav-number">3.0.7.</span> <span class="nav-text">四、结语</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="heart">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Cha.tingting</span>
+
+  
+</div>
+
+
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数：<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+<span class="post-meta-divider">|</span>
+
+<!--
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+-->
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共19.1k字</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("dSEzksBvVcKjRW17O9ks40ew-gzGzoHsz", "x5zy0MVMa4Ch9FK2rOxXjM4q");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: 12509,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+<script type="text/javascript">
+    //微信二维码点击背景关闭
+    $('body').delegate('.-mob-share-weixin-qrcode-bg','click', function(){
+         $(".-mob-share-weixin-qrcode-close").trigger("click");
+    }); 
+</script>
+
+
+
+
+  <script type="text/javascript" color="250,100,49" opacity='0.5' zIndex="-1" count="150" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
+</body>
+</html>
