@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Cha.Tingting
-subtitle: 我是菜狗子,我为自己代言
-description: 我是菜狗子,我为自己代言
+title: Cha.tingting
+subtitle: 我是菜狗子, 我为自己代言
+description: 我是菜狗子, 我为自己代言
 keywords:
-author: Cha.Tingting
+author: Cha.tingting
 language: zh-Hans
 timezone:
 
@@ -75,7 +75,7 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
-avatar: img/tingting.jpg
+avatar: img\tingting.jpg
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -84,12 +84,11 @@ deploy:
   repository: https://github.com/fasoal/fasoal.github.io.git
   branch: master
 
+admin:
+  deployCommand: 'sh hexo-deploy.sh'
+
 search:
   path: search.xml
   field: post
   format: html
   limit: 10000
-
-
-admin:
-  deployCommand: './hexo-deploy'
